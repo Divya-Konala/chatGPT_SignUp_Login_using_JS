@@ -18,6 +18,7 @@ function loginFn(e) {
       const token = () => {
         let randStr = (rand() + rand() + rand() + rand()).substr(0, 10);
         console.log(randStr);
+        alert("Your token ID is: "+randStr);
         return randStr;
       };
       let loginobj = {
