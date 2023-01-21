@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <style>
+      body {
+        margin: 30px;
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+      }
+      body > div {
+        text-align: center;
+      }
+      body input {
+        background-color: black;
+        color: white;
+        font-size: 24px;
+        font-weight: 300;
+        border: none;
+        border-bottom: 1px solid white;
+      }
+      body > p {
+        font-size: 8px;
+      }
+      body button {
+        width: 120px;
+        height: 40px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <h1>Signup Here</h1>
+        <input type="text" id="name" placeholder="Full Name" />
+        <br />
+        <p id="nameErr"></p>
+        <input type="email" id="email" placeholder="Email" />
+        <br />
+        <p id="mailErr"></p>
+        <input type="password" id="password" placeholder="Password" />
+        <br />
+        <p id="pwdErr"></p>
+        <input
+          type="password"
+          id="confirmpassword"
+          placeholder="Confirm Password"
+        />
+        <br />
+        <p id="cnfpwdErr"></p>
+        <button type="submit">Signup</button>
+      </form>
+      <p id="userExists"></p>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
