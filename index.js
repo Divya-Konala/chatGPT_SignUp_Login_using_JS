@@ -41,8 +41,7 @@ function SignupForm(e) {
         id: userDetails.length + 1,
         username: document.querySelector("#name").value,
         email: document.querySelector("#email").value,
-        password: document.querySelector("#password").value,
-        confirmpassword: document.querySelector("#confirmpassword").value,
+        password: document.querySelector("#password").value
       };
       userDetails.push(signupobj);
       localStorage.setItem("Signupdetails", JSON.stringify(userDetails));

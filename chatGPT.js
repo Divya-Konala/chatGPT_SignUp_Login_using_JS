@@ -80,6 +80,9 @@ function verifyToken() {
     noOfCallsLeft > 0 &&
     loginUserDetails[loginUserDetails.length - 1].token == token
   ) {
+    const Msg = new SpeechSynthesisUtterance();
+    Msg.text = document.querySelector("#answer").textContent;
+    window.speechSynthesis.speak(Msg);
     document.querySelector("#userName").textContent =
       "User Name: " + loginUserDetails[loginUserDetails.length - 1].name;
     document.querySelector("#callsLeft").textContent =
